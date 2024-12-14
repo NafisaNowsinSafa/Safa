@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightgreen;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.safa.ManageOrdersFromTheCompanyController">
+   <children>
+      <Label layoutX="181.0" layoutY="14.0" prefHeight="18.0" prefWidth="212.0" text=" Manage Orders from the Company">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="152.0" prefHeight="18.0" prefWidth="114.0" text="Deliveries Schedule :" />
+      <Label layoutX="14.0" layoutY="63.0" prefHeight="18.0" prefWidth="123.0" text=" Selected purchase: " />
+      <Label layoutX="19.0" layoutY="103.0" prefHeight="18.0" prefWidth="113.0" text="Update order status:" />
+      <TextField fx:id="Selectedpurchasetaxtfild" layoutX="146.0" layoutY="59.0" prefHeight="26.0" prefWidth="175.0" />
+      <TableView layoutY="190.0" prefHeight="209.0" prefWidth="600.0" style="-fx-background-color: skyblue;">
+        <columns>
+          <TableColumn fx:id="Listofpurchaseorderstablecolumn" prefWidth="596.7999877929688" text="List of purchase orders" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="DeliveriesScheduleDatePicker" layoutX="146.0" layoutY="144.0" />
+      <ComboBox fx:id="UpdateorderstatusCombobox" layoutX="145.0" layoutY="99.0" prefHeight="26.0" prefWidth="175.0" />
+      <Button layoutX="353.0" layoutY="99.0" mnemonicParsing="false" onAction="#ViewDetailsOnAction" prefHeight="26.0" prefWidth="98.0" text="View Details" />
+      <Button layoutX="472.0" layoutY="99.0" mnemonicParsing="false" onAction="#ConfirmReceiptOnAction" prefHeight="26.0" prefWidth="114.0" text="Confirm Receipt" />
+      <Button layoutX="353.0" layoutY="148.0" mnemonicParsing="false" onAction="#UpdateStatusOnAction" prefHeight="26.0" prefWidth="98.0" text="Update Status" />
+      <Button layoutX="476.0" layoutY="145.0" mnemonicParsing="false" onAction="#ScheduleDeliveryOnAction" prefHeight="26.0" prefWidth="114.0" text="Schedule Delivery" />
+   </children>
+</AnchorPane>

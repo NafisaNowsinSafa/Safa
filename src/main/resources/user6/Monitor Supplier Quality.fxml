@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.safa.user6.MonitorSupplierQualityController">
+   <children>
+      <Label layoutX="49.0" layoutY="114.0" prefHeight="18.0" prefWidth="126.0" text=" supplier performance" />
+      <TextField fx:id="supplierperformancetextfild" layoutX="195.0" layoutY="110.0" />
+      <Label layoutX="176.0" layoutY="29.0" prefHeight="18.0" prefWidth="210.0" text=" supplier performance">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="71.0" prefHeight="18.0" prefWidth="126.0" text="Review Supplier Quality" />
+   </children>
+</AnchorPane>

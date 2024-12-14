@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.safa.ManageProductQualityControler">
+   <children>
+      <Label layoutX="14.0" layoutY="62.0" prefHeight="18.0" prefWidth="74.0" text="Report Title:" />
+      <TextField fx:id="reporttitletextfild" layoutX="163.0" layoutY="58.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label fx:id="productCertificationlable" layoutX="14.0" layoutY="102.0" prefHeight="18.0" prefWidth="117.0" text=" product Certification:" />
+      <Label layoutX="14.0" layoutY="142.0" prefHeight="18.0" prefWidth="74.0" text="Compliance:" />
+      <TextField fx:id="Compliancetextfild" layoutX="164.0" layoutY="138.0" />
+      <Label layoutX="187.0" layoutY="14.0" prefHeight="18.0" prefWidth="169.0" text="Manage Product Quality">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="409.0" layoutY="71.0" mnemonicParsing="false" onAction="#AddReportButtonOnAction" prefHeight="26.0" prefWidth="123.0" text="Add Report" />
+      <Button layoutX="409.0" layoutY="125.0" mnemonicParsing="false" onAction="#DeleteReportButtonOnAction" prefHeight="26.0" prefWidth="123.0" text="Delete Report" />
+      <TableView layoutX="-4.0" layoutY="193.0" prefHeight="210.0" prefWidth="614.0" style="-fx-background-color: lightgreen;">
+        <columns>
+          <TableColumn prefWidth="606.400012254715" text="All Quality Control Reports" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="ProductCertificationComboBox" layoutX="163.0" layoutY="98.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

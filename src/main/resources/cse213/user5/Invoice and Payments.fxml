@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightgreen;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.safa.InvoiceAndPaymentsController">
+   <children>
+      <Label layoutX="26.0" layoutY="53.0" prefHeight="18.0" prefWidth="101.0" text="customer name:" />
+      <Label layoutX="25.0" layoutY="96.0" prefHeight="18.0" prefWidth="102.0" text="customer ID:" />
+      <Label layoutX="25.0" layoutY="142.0" prefHeight="18.0" prefWidth="102.0" text="Order details:" />
+      <Label layoutX="25.0" layoutY="191.0" prefHeight="18.0" prefWidth="102.0" text="Payment:" />
+      <TextField fx:id="customernametextfild" layoutX="156.0" layoutY="49.0" prefHeight="26.0" prefWidth="277.0" />
+      <TextField fx:id="customeridtextfild" layoutX="156.0" layoutY="92.0" prefHeight="26.0" prefWidth="278.0" />
+      <TextField fx:id="oderdetailstextfild" layoutX="156.0" layoutY="138.0" prefHeight="26.0" prefWidth="278.0" />
+      <Label layoutX="215.0" layoutY="14.0" prefHeight="18.0" prefWidth="162.0" text=" Invoice and Payments">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="43.0" layoutY="295.0" mnemonicParsing="false" onAction="#NewInvoiceButtonOnAcction" prefHeight="26.0" prefWidth="142.0" text="New Invoice" />
+      <Button layoutX="229.0" layoutY="295.0" mnemonicParsing="false" onAction="#paidButtonOnAction" prefHeight="26.0" prefWidth="131.0" text="Paid" />
+      <Button layoutX="419.0" layoutY="295.0" mnemonicParsing="false" onAction="#DeleteInvoiceButtonOnAction" prefHeight="26.0" prefWidth="150.0" text="Delete Invoice" />
+      <Label layoutX="25.0" layoutY="244.0" prefHeight="18.0" prefWidth="150.0" text="Invoices for payment" />
+      <RadioButton fx:id="cardradiobutton" layoutX="162.0" layoutY="192.0" mnemonicParsing="false" text="Card" />
+      <RadioButton fx:id="bkashradiobutton" layoutX="260.0" layoutY="192.0" mnemonicParsing="false" text="Bkash" />
+      <RadioButton fx:id="nagadradiobutton" layoutX="339.0" layoutY="191.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="75.0" text="Nagad" />
+   </children>
+</AnchorPane>

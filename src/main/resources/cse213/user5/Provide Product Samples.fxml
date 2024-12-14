@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.safa.ProvideProductSamplesController">
+   <children>
+      <TableView layoutY="233.0" prefHeight="245.0" prefWidth="600.0" style="-fx-background-color: lightgreen;">
+        <columns>
+          <TableColumn fx:id="newproductscolimn" prefWidth="292.00006103515625" text="New products" />
+          <TableColumn fx:id="productsamplescolumn" minWidth="4.79998779296875" prefWidth="255.20001220703125" text=" Product samples" />
+        </columns>
+      </TableView>
+      <Label layoutX="6.0" layoutY="60.0" prefHeight="18.0" prefWidth="100.0" text="Product Name:" />
+      <Label layoutX="6.0" layoutY="98.0" prefHeight="18.0" prefWidth="100.0" text="Requester Details:" />
+      <Label layoutX="310.0" layoutY="97.0" prefHeight="18.0" prefWidth="78.0" text="Feedback :" />
+      <TextField fx:id="productnametextfild" layoutX="126.0" layoutY="57.0" />
+      <TextField fx:id="requesterdetailstextfild" layoutX="126.0" layoutY="94.0" />
+      <TextField fx:id="feedbacktextfild" layoutX="378.0" layoutY="93.0" prefHeight="68.0" prefWidth="192.0" />
+      <Label layoutX="300.0" layoutY="60.0" prefHeight="18.0" prefWidth="100.0" text=" Delivery Update :" />
+      <TextField fx:id="deliveryupdatetextfild" layoutX="420.0" layoutY="57.0" />
+      <Label layoutX="201.0" layoutY="14.0" prefHeight="18.0" prefWidth="150.0" text=" Provide Product Samples">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="156.0" prefHeight="18.0" prefWidth="100.0" text="New products" />
+      <TextField fx:id="requesterdetailstextfild1" layoutX="126.0" layoutY="154.0" />
+      <Label layoutX="6.0" layoutY="196.0" prefHeight="18.0" prefWidth="100.0" text=" Product samples" />
+      <TextField fx:id="requesterdetailstextfild11" layoutX="126.0" layoutY="194.0" />
+   </children>
+</AnchorPane>

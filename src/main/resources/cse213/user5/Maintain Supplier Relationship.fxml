@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightgreen;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="188.0" layoutY="14.0" prefHeight="18.0" prefWidth="222.0" text="Maintain Supplier Relationship">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="44.0" prefHeight="18.0" prefWidth="59.0" text="Meeting">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="83.0" text="Event Name:" />
+      <Label layoutX="20.0" layoutY="119.0" text="Description:" />
+      <Label layoutX="20.0" layoutY="160.0" text="Meeting Schedule:" />
+      <Label layoutX="19.0" layoutY="200.0" prefHeight="18.0" prefWidth="34.0" text="Date:" />
+      <Label layoutX="20.0" layoutY="240.0" prefHeight="18.0" prefWidth="34.0" />
+      <TextField fx:id="EventNametextfild" layoutX="146.0" layoutY="79.0" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: aqua;" />
+      <TextField fx:id="descriptiontextfild" layoutX="146.0" layoutY="115.0" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: aqua;" />
+      <TextField fx:id="productabailabilitytextfild" layoutX="149.0" layoutY="240.0" prefHeight="54.0" prefWidth="334.0" style="-fx-background-color: aqua;" />
+      <DatePicker fx:id="datedatepicker" layoutX="145.0" layoutY="205.0" prefHeight="26.0" prefWidth="168.0" />
+      <ComboBox fx:id="MeetingSchedulecomboBox" layoutX="145.0" layoutY="155.0" prefHeight="30.0" prefWidth="168.0" promptText="      " />
+      <Label layoutX="13.0" layoutY="322.0" prefHeight="18.0" prefWidth="182.0" text="Assigned Procurement Team:" />
+      <Label layoutX="13.0" layoutY="249.0" prefHeight="18.0" prefWidth="132.0" text="product Abailability:" />
+      <TextField fx:id="assignedprocurementteamtextfild" layoutX="196.0" layoutY="304.0" prefHeight="54.0" prefWidth="290.0" style="-fx-background-color: aqua;" />
+      <AmbientLight color="CHARTREUSE" lightOn="true" />
+   </children>
+</AnchorPane>

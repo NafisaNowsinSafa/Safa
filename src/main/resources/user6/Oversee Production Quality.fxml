@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="402.0" prefWidth="582.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.safa.user6.OverseeProductionQualityController">
+   <children>
+      <Label layoutX="14.0" layoutY="69.0" prefHeight="18.0" prefWidth="87.0" text="Batch number:" />
+      <TableView layoutX="2.0" layoutY="176.0" prefHeight="226.0" prefWidth="582.0" style="-fx-background-color: pink;">
+        <columns>
+          <TableColumn fx:id="listofproductionbatchestablecolumn" prefWidth="155.1999785900116" text="List of production batches" />
+          <TableColumn fx:id="listofauditsforafactory" prefWidth="169.59999084472656" text=" List of audits for a factory" />
+            <TableColumn fx:id="evaluationresulttablecolumn" prefWidth="115.199951171875" text="Evaluation Result" />
+            <TableColumn fx:id="productqualitytablecolumn" prefWidth="140.0" text="Product Quality" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="103.0" prefHeight="18.0" prefWidth="97.0" text=" Evaluation result:" />
+      <TextField fx:id="batchnumbertextfild" layoutX="125.0" layoutY="66.0" />
+      <TextField fx:id="evaluationresulttextfild" layoutX="125.0" layoutY="99.0" />
+      <Label layoutX="300.0" layoutY="69.0" prefHeight="18.0" prefWidth="98.0" text="Product Quality :" />
+      <TextField fx:id="productqualitytextfild" layoutX="411.0" layoutY="66.0" />
+      <Button layoutX="415.0" layoutY="111.0" mnemonicParsing="false" onAction="#submitfeedbackbuttononaction" prefHeight="26.0" prefWidth="141.0" text="Submit Feedback" />
+      <Label layoutX="186.0" layoutY="14.0" prefHeight="18.0" prefWidth="193.0" text=" Oversee Production Quality">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
